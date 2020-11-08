@@ -1,0 +1,18 @@
+test:
+load -users /extra/javaProjects/indProject/src/main/resources/iranian_users_csv_hashed
+expectedOutput:
+770 users loaded successfully
+test:
+load -tweets /extra/javaProjects/indProject/src/main/resources/iranian_tweets_csv_hashed.csv
+expectedOutput:
+1122936 tweets loaded successfully
+test:
+link
+expectedOutput:
+Users are now linked with their tweets.
+0 tweets could not be assigned to a user.
+Influence graph is constructed.
+test:
+quit
+expectedOutput:
+Terminating program...
